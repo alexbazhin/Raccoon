@@ -1,11 +1,29 @@
 <meta charset="utf-8">
+<link href="popup.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/popup.js"></script>
-<ul class="list">
-    <li class="list__element"></li>
-</ul>
-<span>Что напомнить?</span>
-<input type="text" class="reminder_text">
-<span>Через сколько/Во сколько?</span>
-<input type="text" class="reminder_time">
-<button class="button_ok">OK</button>
+<div class="header">
+    <img src="images/header.png">
+</div>
+<div class="main">
+    <div class="left_column">
+        <ul class="list">
+            <li class="list__element"></li>
+        </ul>
+    </div>
+    <div class="right_column">
+        <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Что напомнить?</label>
+        </div>
+        <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Через сколько?</label>
+        </div>
+        <button class="btn orange" type="button"><span>OK</span></button>
+    </div>
+</div>
